@@ -12,10 +12,10 @@ public class Exercise4 {
 
 		int num = sc.nextInt();
 
-		for ( int i  = 1; i <= num; i++) {
+		for (int i = 1; i <= num; i++) {
 			num = num * i;
 
-			System.out.println(num + " v stepeni" +" "+ num *2);
+			System.out.println(num + " v stepeni" + " " + num * 2);
 
 		}
 		sc.close();

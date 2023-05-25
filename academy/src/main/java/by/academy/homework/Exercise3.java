@@ -12,8 +12,8 @@ public class Exercise3 {
 		int x = sc.nextInt();
 
 		for (int i = 0; i < 11; i++) {
-			
-			System.out.println(x + "*" + i + "=" + i*x);
+
+			System.out.println(x + "*" + i + "=" + i * x);
 		}
 		sc.close();
 

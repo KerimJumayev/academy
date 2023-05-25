@@ -36,14 +36,12 @@ public class HomeWork {
 		}
 		if (age > 18) {
 			System.out.println("plus 4% to the sale");
-		}else {
+		} else {
 			System.out.println("plus sale 3%");
 		}
-		
+
 		sc.close();
-		
 
 	}
-
 
 }
