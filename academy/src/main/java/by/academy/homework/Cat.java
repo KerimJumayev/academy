@@ -1,8 +1,8 @@
-package by.academy.lessons2;
+package by.academy.homework;
 
 public class Cat {
 
-	Cat cat1 = new Cat();
+
 	int age;
 	String nickname;
 	String color;
@@ -77,7 +77,7 @@ public class Cat {
 
 	@Override
 	public String toString() {
-		return "Cat [cat1=" + cat1 + ", age=" + age + ", nickname=" + nickname + ", color=" + color + ", weight="
+		return "Cat [cat1=" + ", age=" + age + ", nickname=" + nickname + ", color=" + color + ", weight="
 				+ weight + ", money=" + money + ", initials=" + initials + ", isHomeAnimal=" + isHomeAnimal + "]";
 	}
 	

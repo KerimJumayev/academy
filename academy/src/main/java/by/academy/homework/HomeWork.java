@@ -11,33 +11,25 @@ public class HomeWork {
 		int age = sc.nextInt();
 		System.out.println("wride your price");
 
-		int a = sc.nextInt();
+		int price = sc.nextInt();
 
-		if (a >= 100) {
-			System.out.println("sale 5% price more than 100");
-		}
-		if (a < 100) {
-			System.out.println("no sale");
-		}
-		if (a <= 200) {
+		if (price < 100) {
+			System.out.println("sale 5%");
+		} else if (price > 100 && price < 200) {
 			System.out.println("sale 7%");
-		}
-		if (a > 200) {
-			System.out.println(" sale 12% price more than 200");
-		}
-		if (a > 300) {
-			System.out.println(" sale 15% price more than 300");
-		}
-		if (a <= 400) {
-			System.out.println("jojo");
-		}
-		if (a > 400) {
-			System.out.println("sale 21% price more than 400");
-		}
-		if (age > 18) {
-			System.out.println("plus 4% to the sale");
-		} else {
-			System.out.println("plus sale 3%");
+		} else if (price > 200 && price < 300) {
+			System.out.println("sale 12%");
+			if (age > 18)
+				System.out.println("plus for sale 4 %");
+			else if (age < 18) {
+				System.out.println("minus 3% off your sale");
+
+			}
+
+		} else if (price > 300 && price < 400) {
+			System.out.println("sale 15%");
+		} else if (price > 400) {
+			System.out.println("sale 20%");
 		}
 
 		sc.close();
