@@ -14,13 +14,13 @@ public class Exersice4 {
 		System.out.println("how many players");
 		String sc = scan.next();
 
-		int[] arreyCard = new int[62];
+		String[] arreyCard = new String[62];
 		Random rand = new Random();
 		for (int i = 0; i < arreyCard.length; i++) {
-			arreyCard[i] = rand.nextInt(62 );
+			arreyCard[i] = rand.toString();
 
 		}
-		for (int element : arreyCard) {
+		for (String element : arreyCard) {
 			System.out.println(element);
 		}
 
