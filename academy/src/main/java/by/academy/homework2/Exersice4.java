@@ -15,6 +15,8 @@ public class Exersice4 {
 		String sc = scan.next();
 
 		String[] arreyCard = new String[62];
+		String[] arreyCardSuits = new String[62];
+
 		Random rand = new Random();
 		for (int i = 0; i < arreyCard.length; i++) {
 			arreyCard[i] = rand.toString();

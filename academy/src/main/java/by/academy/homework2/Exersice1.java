@@ -12,6 +12,9 @@ public class Exersice1 {
 		String sc2 = scan.nextLine();
 
 		System.out.println(sc.equals(sc2));
+
+//		System.out.println("hello".equals("hello"));
+//		System.out.println("hello".equals("apple"));
 		scan.close();
 
 	}

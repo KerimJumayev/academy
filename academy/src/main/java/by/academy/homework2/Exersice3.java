@@ -7,16 +7,14 @@ public class Exersice3 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("write word");
-		String sc = scan.nextLine();
-		String sc2 = scan.nextLine();
-//		String str1 = "";
-//		String str2 = "";
-		String str3 = sc + " " + 13 / 2 + sc2;
-		
+		String str1 = scan.next();
+		String str2 = scan.next();
+		System.out.println("first word:" + " " + str1);
+		System.out.println("second word:" + " " + str2);
+		String str3 = (str1.substring(0, str1.length() / 2) + str2.substring(str2.length() / 2, str2.length()));
 		System.out.println(str3);
-		
+
 		scan.close();
 	}
-	
 
 }
