@@ -1,5 +1,6 @@
 package by.academy.homework2;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.*;
 
@@ -7,8 +8,9 @@ public class Exersice2 {
 	public static void main(String[] args) {
 
 		Scanner scan = new Scanner(System.in);
-		System.out.println("write words");
+		System.out.println("enter num ");
 		int sc = scan.nextInt();
+		System.out.println("write words");
 		scan.nextLine();
 
 		String minSymbol = null;
@@ -23,7 +25,7 @@ public class Exersice2 {
 
 			}
 		}
-		System.out.println("min word symbol" + minDistictCount);
+		System.out.println("min word symbol " + minDistictCount);
 		scan.close();
 
 	}

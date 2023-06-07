@@ -18,6 +18,7 @@ public class Exersice4 {
 		int quantity = cardSuits.length * cardNum.length;
 
 		Scanner scan = new Scanner(System.in);
+
 		do {
 			System.out.println("enter the num of players");
 			players = scan.nextInt();
@@ -45,7 +46,10 @@ public class Exersice4 {
 			if ((i + 0) % cardForPlayers == 0) {
 
 			}
+
 		}
+
+		scan.close();
 
 	}
 
