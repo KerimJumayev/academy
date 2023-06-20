@@ -10,14 +10,20 @@ public class Menu {
 		Scanner scan = new Scanner(System.in);
 		int sc = scan.nextInt();
 		Product[] array = new Product[10];
-
+		
+		Deal d = new Deal();
+		
 		while (sc != 0) {
 
 			switch (sc) {
 			case 0:
 				return;
 			case 1:
-				addProduct(scan, array);
+				Product p = createProduct(scan);
+				if ( p == null) {
+					break;
+				}
+				d.addProduct(p);
 				System.out.println(" add product");
 				break;
 
@@ -31,21 +37,23 @@ public class Menu {
 		scan.close();
 	}
 
-	public static void addProduct(Scanner scan, Product array[]) {
+	public static Product createProduct(Scanner scan) {
 		System.out.println("enter pro type");
 		String type = scan.next();
 		switch (type) {
 		case "wine":
+			System.out.println(" ");
 			String name = scan.next();
+			System.out.println("");
 			int price = scan.nextInt();
 			int quantity = scan.nextInt();
 			String color = scan.next();
 			int alcoholPercent = scan.nextInt();
 
-			Product p = new Wine(name, price, quantity, color, alcoholPercent);
-			array[0] = p;
-			break;
+			return new Wine(name, price, quantity, color, alcoholPercent);
+
 		}
+		return null;
 	}
 
 	public static void printMenu() {

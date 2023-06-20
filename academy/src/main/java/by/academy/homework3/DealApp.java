@@ -12,7 +12,7 @@ public class DealApp {
 		products[0] = new Products("banana", 15, 6);
 		products[0] = new Products("orange", 20, 4);
 
-		Deal deal = new Deal("Houston", sellerB, buyerF, products);
+		Deal deal = new Deal();
 		System.out.println("Full deal cost" + deal.calcPrice());
 
 	}

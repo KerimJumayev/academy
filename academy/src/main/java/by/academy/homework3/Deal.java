@@ -8,9 +8,15 @@ public class Deal {
 	String addres;
 	User buyer;
 	User seller;
-	Products[] products;
+	Product[] products;
+	int index = 0;
 
-	public Deal(String addres, User buyer, User seller, Products[] products) {
+	public Deal() {
+		super();
+		products = new Product[10];
+	}
+
+	public Deal(String addres, User buyer, User seller, Product[] products) {
 		this.addres = addres;
 		this.buyer = buyer;
 		this.seller = seller;
@@ -19,7 +25,7 @@ public class Deal {
 
 	public int calcPrice() {
 		int price = 0;
-		for (Products p : products) {
+		for (Product p : products) {
 			if (p == null) {
 				continue;
 			}
@@ -74,14 +80,14 @@ public class Deal {
 	/**
 	 * @return the products
 	 */
-	public Products[] getProducts() {
+	public Product[] getProducts() {
 		return products;
 	}
 
 	/**
 	 * @param products the products to set
 	 */
-	public void setProducts(Products[] products) {
+	public void setProducts(Product[] products) {
 		this.products = products;
 	}
 
@@ -111,6 +117,10 @@ public class Deal {
 		Deal other = (Deal) obj;
 		return Objects.equals(addres, other.addres) && Objects.equals(buyer, other.buyer)
 				&& Arrays.equals(products, other.products) && Objects.equals(seller, other.seller);
+	}
+
+	public void addProduct(Product p) {
+		products[index++] = p;
 	}
 
 }

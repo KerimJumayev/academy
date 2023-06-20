@@ -83,4 +83,9 @@ public class Product {
 		return "Product [name=" + name + ", price=" + price + ", quantity=" + quantity + "]";
 	}
 
+	public int calcFullPrice() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }
