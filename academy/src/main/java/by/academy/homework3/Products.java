@@ -2,7 +2,7 @@ package by.academy.homework3;
 
 import java.util.Objects;
 
-public class Products {
+public abstract class Products {
 
 	String name;
 	int price;
@@ -14,8 +14,10 @@ public class Products {
 		this.quantity = quantity;
 	}
 
+	public abstract int disCount();
+
 	public int calcFullPrice() {
-		return price * quantity;
+		return price * quantity * disCount();
 	}
 
 	/**

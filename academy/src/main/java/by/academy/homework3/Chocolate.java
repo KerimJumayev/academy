@@ -1,16 +1,25 @@
 package by.academy.homework3;
 
+
 import java.util.Objects;
 
-public class Chocolate extends Product {
+public abstract class Chocolate extends Product {
 
+	protected String sort;
 	String producer;
 	boolean isBlack;
 
-	public Chocolate(String name, int price, int quantity, String producer, boolean isBlack) {
+	public Chocolate(String name, int price, int quantity, String producer, boolean isBlack, String sort) {
 		super(name, price, quantity);
 		this.producer = producer;
 		this.isBlack = isBlack;
+		this.sort = sort;
+
+	}
+
+	@Override
+	public int disCount() {
+		return 9;
 	}
 
 	/**

@@ -119,8 +119,29 @@ public class Deal {
 				&& Arrays.equals(products, other.products) && Objects.equals(seller, other.seller);
 	}
 
+	private void grows() {
+		Product[] temp = new Product[products.length + 1];
+		System.arraycopy(products, 0, temp, 0, products.length);
+		products = temp;
+	}
+
 	public void addProduct(Product p) {
+		if (index >= products.length) {
+			grows();
+
+		}
 		products[index++] = p;
+
+	}
+
+	public void remove() {
+		if (index == 0) {
+			return;
+		}
+		products[--index] = null;
+	}
+	public void name() {
+		
 	}
 
 }

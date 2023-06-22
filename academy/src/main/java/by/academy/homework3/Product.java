@@ -2,7 +2,7 @@ package by.academy.homework3;
 
 import java.util.Objects;
 
-public class Product {
+public abstract class Product {
 
 	private String name;
 	private int price;
@@ -84,8 +84,8 @@ public class Product {
 	}
 
 	public int calcFullPrice() {
-		// TODO Auto-generated method stub
 		return 0;
 	}
+	public abstract int disCount();
 
 }

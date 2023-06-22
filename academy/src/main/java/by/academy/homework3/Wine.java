@@ -2,7 +2,7 @@ package by.academy.homework3;
 
 import java.util.Objects;
 
-public class Wine extends Product {
+public class Wine extends Products {
 
 	String color;
 	int alcoholPercent;
@@ -62,8 +62,9 @@ public class Wine extends Product {
 	}
 
 	@Override
-	public String toString() {
-		return "Wine [color=" + color + ", alcoholPercent=" + alcoholPercent + "]";
+	public int disCount() {
+		
+		return 0;
 	}
 
 }
