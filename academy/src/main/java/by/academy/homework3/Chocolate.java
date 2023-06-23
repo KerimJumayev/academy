@@ -3,7 +3,7 @@ package by.academy.homework3;
 
 import java.util.Objects;
 
-public abstract class Chocolate extends Product {
+public abstract class Chocolate extends Products {
 
 	protected String sort;
 	String producer;

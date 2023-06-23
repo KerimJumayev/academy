@@ -63,8 +63,10 @@ public class Wine extends Products {
 
 	@Override
 	public int disCount() {
-		
-		return 0;
+		if (quantity > 8) {
+			return 7;
+		}
+		return 1;
 	}
 
 }
