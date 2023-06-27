@@ -1,9 +1,12 @@
 package by.academy.homework3;
 
+import java.util.Scanner;
+
 public class DealApp {
 
 	public static void main(String[] args) {
 
+		Scanner scan = new Scanner(System.in);
 		User sellerB = new User("John", 30, 400);
 		User buyerF = new User("Bob", 25, 500);
 
@@ -14,7 +17,7 @@ public class DealApp {
 		
 			
 		;
-		Deal deal = new Deal();
+		Deal deal = new Deal("Borabora", buyerF, sellerB, null);
 		System.out.println("Full deal cost" + deal.calcPrice());
 
 	}
