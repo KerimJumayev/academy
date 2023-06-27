@@ -4,7 +4,7 @@ import java.text.DateFormat;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class DateValidador implements Validator {
+public class DateValidator implements Validator {
 
 	private static final String DATE_PATTERN_1 = "\\d{2}/\\d{2}/\\d{4}";
 	private static final String DATE_PATTERN_2 = "\\d{2}/\\d{2}/\\d{4}";
