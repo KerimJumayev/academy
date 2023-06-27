@@ -4,6 +4,13 @@ import java.util.Scanner;
 
 public class Menu {
 
+	private Deal deal;
+
+	public Menu(Deal deal) {
+		super();
+		this.deal = deal;
+	}
+
 	public static void main(String[] args) {
 
 		printMenu();
@@ -38,26 +45,26 @@ public class Menu {
 	}
 
 	public static Product createProduct(Scanner scan) {
-		System.out.println("enter pro type");
+		System.out.println("enter product type");
 		String type = scan.next();
 		switch (type) {
 		case "wine":
-			System.out.println("type name ");
+			System.out.println("type name Wine ");
 			String name = scan.next();
 
-			System.out.println("your price");
+			System.out.println("Wine price");
 			int price = scan.nextInt();
 
-			System.out.println("quantity");
+			System.out.println("Wine quantity");
 			int quantity = scan.nextInt();
 
-			System.out.println("color");
+			System.out.println("Wine color");
 			String color = scan.next();
 
-			System.out.println("alcohol percent");
+			System.out.println("Wine alcohol percent");
 			int alcoholPercent = scan.nextInt();
 
-			return new Wine(name, price, quantity, color, alcoholPercent);
+			Deal.addProduct(new Wine(name, price, quantity, color, alcoholPercent));
 
 		}
 		return null;
@@ -68,5 +75,6 @@ public class Menu {
 		System.out.println("1- add product");
 
 	}
+	
 
 }
