@@ -1,8 +1,10 @@
-package by.academy.lesson7;
+package by.academy.lesson8;
 
 public class DogDemo {
 
 	public static void main(String[] args) {
+		
+		
 		
 		Dog dog0 = new Dog("sharik");
 		Dog dog1 = new Dog("bobik");

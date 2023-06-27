@@ -1,4 +1,4 @@
-package by.academy.lesson7;
+package by.academy.lesson8;
 
 public class Phone {
 
@@ -36,7 +36,6 @@ public class Phone {
 
 	public Phone() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 }

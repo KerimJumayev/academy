@@ -1,4 +1,4 @@
-package by.academy.lesson7;
+package by.academy.lesson8;
 
 import java.util.Objects;
 

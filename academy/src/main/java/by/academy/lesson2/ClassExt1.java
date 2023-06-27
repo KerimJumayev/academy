@@ -1,4 +1,4 @@
-package by.academy.lessons2;
+package by.academy.lesson2;
 
 public class ClassExt1 {
 
