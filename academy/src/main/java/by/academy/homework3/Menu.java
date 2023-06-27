@@ -2,7 +2,7 @@ package by.academy.homework3;
 
 import java.util.Scanner;
 
-public  class Menu {
+public class Menu {
 
 	public static void main(String[] args) {
 
@@ -10,9 +10,9 @@ public  class Menu {
 		Scanner scan = new Scanner(System.in);
 		int sc = scan.nextInt();
 		Product[] array = new Product[10];
-		
+
 		Deal d = new Deal();
-		
+
 		while (sc != 0) {
 
 			switch (sc) {
@@ -20,7 +20,7 @@ public  class Menu {
 				return;
 			case 1:
 				Product p = createProduct(scan);
-				if ( p == null) {
+				if (p == null) {
 					break;
 				}
 				d.addProduct(p);
@@ -42,12 +42,19 @@ public  class Menu {
 		String type = scan.next();
 		switch (type) {
 		case "wine":
-			System.out.println(" ");
+			System.out.println("type name ");
 			String name = scan.next();
-			System.out.println("");
+
+			System.out.println("your price");
 			int price = scan.nextInt();
+
+			System.out.println("quantity");
 			int quantity = scan.nextInt();
+
+			System.out.println("color");
 			String color = scan.next();
+
+			System.out.println("alcohol percent");
 			int alcoholPercent = scan.nextInt();
 
 			return new Wine(name, price, quantity, color, alcoholPercent);

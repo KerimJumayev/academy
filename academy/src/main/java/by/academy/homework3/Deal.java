@@ -140,7 +140,7 @@ public class Deal {
 		}
 		products[--index] = null;
 	}
-	public void name() {
+	public void removeProducts() {
 		
 	}
 
