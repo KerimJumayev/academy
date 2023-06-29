@@ -1,13 +1,14 @@
 package by.academy.homework3;
 
+import java.util.Date;
 import java.util.Objects;
 import java.util.Scanner;
 
 public class User {
 
-	String name;
-	int age;
-	int manney;
+	private String name;
+	private int age;
+	private int manney;
 	private String dateOfBirth;
 	private String phone;
 	private String email;
@@ -16,6 +17,7 @@ public class User {
 	Validator emailValidator;
 
 	public User(String name, int age, int manney) {
+		super();
 		this.name = name;
 		this.age = age;
 		this.manney = manney;
@@ -65,6 +67,70 @@ public class User {
 	 */
 	public void setManney(int manney) {
 		this.manney = manney;
+	}
+
+	/**
+	 * @return the dateValidator
+	 */
+	public DateValidator getDateValidator() {
+		return dateValidator;
+	}
+
+	/**
+	 * @param dateValidator the dateValidator to set
+	 */
+	public void setDateValidator(DateValidator dateValidator) {
+		this.dateValidator = dateValidator;
+	}
+
+	/**
+	 * @return the phoneValidator
+	 */
+	public Validator getPhoneValidator() {
+		return phoneValidator;
+	}
+
+	/**
+	 * @param phoneValidator the phoneValidator to set
+	 */
+	public void setPhoneValidator(Validator phoneValidator) {
+		this.phoneValidator = phoneValidator;
+	}
+
+	/**
+	 * @return the emailValidator
+	 */
+	public Validator getEmailValidator() {
+		return emailValidator;
+	}
+
+	/**
+	 * @param emailValidator the emailValidator to set
+	 */
+	public void setEmailValidator(Validator emailValidator) {
+		this.emailValidator = emailValidator;
+	}
+
+	/**
+	 * @param date 
+	 * @return the dateOfBirth
+	 */
+	public String getDateOfBirth(Date date) {
+		return dateOfBirth;
+	}
+
+	/**
+	 * @return the phone
+	 */
+	public String getPhone() {
+		return phone;
+	}
+
+	/**
+	 * @return the email
+	 */
+	public String getEmail() {
+		return email;
 	}
 
 	@Override

@@ -19,6 +19,7 @@ public class DealApp {
 		
 		Deal deal = new Deal("Borabora", buyerF, sellerB, null);
 		Menu menu = new Menu(deal);
+		menu.start();
 		
 		
 		System.out.println("Full deal cost" + deal.calcPrice());
