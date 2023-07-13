@@ -2,7 +2,7 @@ package by.academy.homework3;
 
 import java.util.Objects;
 
-public class Wine extends Products {
+public class Wine extends Product {
 
 	String color;
 	int alcoholPercent;

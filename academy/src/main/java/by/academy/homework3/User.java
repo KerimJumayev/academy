@@ -27,6 +27,11 @@ public class User {
 
 	}
 
+	public User() {
+		super();
+		
+	}
+
 	/**
 	 * @return the name
 	 */

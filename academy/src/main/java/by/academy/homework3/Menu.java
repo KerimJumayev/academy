@@ -51,7 +51,7 @@ public class Menu {
 		scan.close();
 	}
 
-	public static Product createProduct(Scanner scan) {
+	public  Product createProduct(Scanner scan) {
 		System.out.println("enter product type");
 		String type = scan.next();
 		switch (type) {
@@ -71,11 +71,11 @@ public class Menu {
 			System.out.println("Wine alcohol percent");
 			int alcoholPercent = scan.nextInt();
 
-			Deal.addProduct(new Wine(name, price, quantity, color, alcoholPercent));
+			deal.addProduct(new Wine(name, price, quantity, color, alcoholPercent));
 
 		}
 		return null;
-
+	}
 	private User createUser() {
 
 		User user = new User();

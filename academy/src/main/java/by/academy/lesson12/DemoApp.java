@@ -4,7 +4,7 @@ public class DemoApp {
 
 	public static void main(String[] args) {
 
-		ClassWork <String,String,String>  str = new ClassWork<>("T","V","K");
+		ClassWork <String,Cat,Integer>  str = new ClassWork<>("T", new Cat("super cat"),123456789);
 		
 		str.printClasses();
 	}
