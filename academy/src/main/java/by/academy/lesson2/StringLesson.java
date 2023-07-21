@@ -17,7 +17,8 @@ public class StringLesson {
 		int endIndex = startIndex + "is".length();
 		sb.replace(startIndex, endIndex, "abc");
 
-		System.out.println(sb);
+		System.out.println(sb);// Lorem "Ipsum is simply dummy text"
+								// Lorem "Ipsum abc simply dummy text"
 
 	}
 

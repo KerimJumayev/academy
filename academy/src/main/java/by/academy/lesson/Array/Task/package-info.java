@@ -1,1 +1,1 @@
-package by.academy.lesson.task;
+package by.academy.lesson.Array.Task;

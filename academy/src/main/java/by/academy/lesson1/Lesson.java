@@ -16,13 +16,13 @@ public class Lesson {
 		Scanner sc = new Scanner(System.in);
 		
 	int n = sc.nextInt();
-//		int result = 1; 
-//
-//		for (int n1 = 1; n1<= n; n1++) {
-//			result *= n1;
-//		}
-//		System.out.println(result);
-//	
+		int result = 1; 
+
+		for (int n1 = 1; n1<= n; n1++) {
+			result *= n1;
+		}
+		System.out.println(result);
+	
 	
 		
 		

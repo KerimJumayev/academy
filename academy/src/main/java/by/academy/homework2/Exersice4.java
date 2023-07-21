@@ -1,11 +1,8 @@
 package by.academy.homework2;
 
-import java.security.PublicKey;
-import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-import javax.naming.InitialContext;
 
 public class Exersice4 {
 // БЫЛО ОЧЕНЬ ТРУДНО ПРИ РЕШЕНИИ
@@ -18,7 +15,7 @@ public class Exersice4 {
 		int quantity = cardSuits.length * cardNum.length;
 
 		Scanner scan = new Scanner(System.in);
-
+		scan.close();
 		do {
 			System.out.println("enter the num of players");
 			players = scan.nextInt();
@@ -49,7 +46,7 @@ public class Exersice4 {
 
 		}
 
-		scan.close();
+		
 
 	}
 
@@ -62,7 +59,7 @@ public class Exersice4 {
 			String temp = arrey[i];
 			arrey[index] = arrey[i];
 			arrey[i] = temp;
-
+			
 		}
 
 	}
